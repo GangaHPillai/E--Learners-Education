@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Multiple Page Form example - not mine</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form id="regForm" action="">
+
+<h1>Register:</h1>
+
+<!-- One "tab" for each step in the form: -->
+<div class="tab">Days you are free:
+  <p><input placeholder="Day 1 ..." oninput="this.className = ''"></p>
+  <p><input placeholder="Day 2 ..." oninput="this.className = ''"></p>
+</div>
+
+<div class="tab">How much duration you can spend on E-Learners:
+  <p><input placeholder="Minimum hours per day..." oninput="this.className = ''"></p>
+  <p><input placeholder="Maximum hours per day..." oninput="this.className = ''"></p>
+</div>
+
+<div class="tab">Subject fieldls you are in which you are interested more:
+  <p><input placeholder="Subject 1" oninput="this.className = ''"></p>
+  <p><input placeholder="Subject 2" oninput="this.className = ''"></p>
+  <p><input placeholder="Subject 3" oninput="this.className = ''"></p>
+</div>
+
+<div class="tab">Enter credentials to receive your Time-Table:
+  <p><input placeholder="Mobile No." oninput="this.className = ''"></p>
+  <p><input placeholder="E-mail" oninput="this.className = ''"></p>
+</div>
+
+<div style="overflow:auto;">
+  <div style="float:right;">
+    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+  </div>
+</div>
+
+<!-- Circles which indicates the steps of the form: -->
+<div style="text-align:center;margin-top:40px;">
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+</div>
+
+</form>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
